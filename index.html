@@ -678,6 +678,17 @@ html.slides .gchart svg{max-height:300px}
   .statement .sw{opacity:1}
   .feat .fs{transform:none}
 }
+
+/* why-hire-me fan of work samples */
+.fan{position:relative;height:clamp(230px,24vw,300px);margin-top:clamp(28px,3vw,40px);max-width:520px}
+.fan figure{position:absolute;margin:0;width:58%;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:6px;box-shadow:var(--shadow-lg);transition:transform .45s cubic-bezier(.2,.8,.2,1),z-index 0s}
+.fan figure img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;border-radius:9px;display:block}
+.fan figcaption{position:absolute;left:12px;bottom:12px;font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;background:var(--ink);color:var(--paper);padding:5px 9px;border-radius:999px}
+.fan .f1{left:0;top:18%;transform:rotate(-7deg);z-index:1}
+.fan .f2{left:21%;top:0;transform:rotate(2deg);z-index:2}
+.fan .f3{left:42%;top:22%;transform:rotate(9deg);z-index:3}
+.fan figure:hover{z-index:5;transform:rotate(0) translateY(-10px) scale(1.04)}
+@media (max-width:860px){.fan{height:clamp(200px,52vw,280px);max-width:none}}
 </style>
 
 </head>
@@ -773,6 +784,11 @@ html.slides .gchart svg{max-height:300px}
     <div>
       <p class="eyebrow rv"><span class="dot"></span> Why hire me</p>
       <h2 id="about-h" class="statement" style="margin-top:18px" data-words>Content that gets you found, read and bought. <span class="acc">One lead. Every channel.</span></h2>
+      <div class="fan rv" aria-label="Work samples">
+        <figure class="f1"><img src="amazon-karungali-1200x628.jpg" alt="Amazon marketplace ad creative" loading="lazy"><figcaption>Ads</figcaption></figure>
+        <figure class="f2"><img src="shot-gdoc-chegg.png" alt="Content brief in Google Docs" loading="lazy"><figcaption>Briefs</figcaption></figure>
+        <figure class="f3"><img src="shot-medium-ai.png" alt="Published Medium article" loading="lazy"><figcaption>Articles</figcaption></figure>
+      </div>
     </div>
     <div class="about-copy rv">
       <p><b style="color:var(--ink)">Strategy first.</b> Keywords, funnel and calendar planned before a word is written.</p>
